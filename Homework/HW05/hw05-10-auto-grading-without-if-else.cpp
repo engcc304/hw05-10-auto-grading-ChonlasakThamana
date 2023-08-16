@@ -27,3 +27,44 @@
     Output:
         F !
 */
+#include <stdio.h>
+
+int main() {
+    int score;
+    
+    printf("enter score:\n");
+    scanf("%d", &score);
+    
+    switch (score / 5) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            printf("F !\n");
+            break;
+        case 5:
+            printf("D !\n");
+            break;
+        case 6:
+            printf("D+ !\n");
+            break;
+        case 7:
+            printf("C !\n");
+            break;
+        case 8:
+            printf("C+ !\n");
+            break;
+        case 9:
+            printf("B !\n");
+            break;
+        case 10:
+            printf("B+ !\n");
+            break;
+        default:
+            printf("A !\n");
+            break;
+    }
+    
+    return 0;
+}
